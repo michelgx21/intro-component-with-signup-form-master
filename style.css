@@ -20,7 +20,7 @@ body{
     width: 100vw;
     font-size: 16px;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
     background-image:url(./images/bg-intro-mobile.png);
     background-color: var(--Red);
     color: white;
