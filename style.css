@@ -20,7 +20,7 @@ body{
     width: 100vw;
     font-size: 16px;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     background-image:url(./images/bg-intro-mobile.png);
     background-color: var(--Red);
     color: white;
@@ -39,7 +39,7 @@ p{
     font-weight: 400;
 }
 #text1{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 60px;
     line-height: 30px;
     font-weight: 500;
