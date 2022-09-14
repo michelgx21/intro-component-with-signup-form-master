@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+ 
+
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    width: 100vw;
+    font-size: 16px;
+    text-align: center;
+    padding: 2rem;
+    background-image:url(./images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    max-width: 1164px;
+}
+/*--section1--*/
+
+h1{font-weight: 700;}
+p{
+    font-weight: 400;
+}
+#text1{
+    margin-top: 2rem;
+    margin-bottom: 60px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+/*--section2--*/
+
+
+#button1{
+    color: white;
+    background-color: var(--Blue);
+    box-shadow:0px 10px 0px 0px rgba(0,0,0,0.10);
+}
+
+/*--form--*/
+
+
+form{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0px 20px 0px;
+    box-shadow:0px 10px 0px 0px rgba(0,0,0,0.10);
+
+}
+
+button{
+    font-size: 16px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+}
+input{
+    padding-left: 30px;
+    border: 1px solid var(--GrayishBlue);
+    outline: none;
+}
+input::placeholder{
+    font-weight: 600;
+}
+.form-control{
+    position: relative;
+}
+ 
+small{
+    position: absolute;
+    color: var(--Red);
+    top: 60px;
+    right: 25px;
+}
+.form-control i{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    visibility: hidden;
+}
+
+/*--error--*/
+.form-control.error input{
+    border-color:red;
+}
+
+.form-control.error i{
+    visibility: visible;
+}
+/*--success--*/
+.form-control.success input{
+    border-color: var(--GrayishBlue);
+}.form-control.success small{
+    visibility: hidden;
+}
+
+#button2{
+    background-color: var(--Green);
+    color: white;
+    font-weight: 600;
+    
+
+}
+
+span{
+    font-weight: 600;
+}
+
+.formSign{
+    width: 90%;
+    height: 50px;
+    margin: 10px 0px 10px 0px;
+}
+#clicking{
+    color: var(--GrayishBlue);
+    font-size: 12px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-weight: 400;
+}
+#clicking span{
+  color: var(--Red);
+}
+@media screen and (min-width:1024px) {
+    body{
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+    main{
+        display: flex;
+        gap: 100px;
+
+    }
+    h1{
+        font-size: 50px;
+    }
+    section{
+        text-align: left;
+        max-width: 500px;
+       padding-top: 100px;
+    }
+}
